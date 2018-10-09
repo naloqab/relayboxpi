@@ -99,7 +99,7 @@ input:checked + .slider:before
 } */
 
 .section-title {
-    height: 25px;
+    height: 40px;
 }
 
 .section-container {
