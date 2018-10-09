@@ -1,0 +1,9 @@
+<?php
+
+{
+
+exec ("sudo reboot");
+
+}
+
+?>

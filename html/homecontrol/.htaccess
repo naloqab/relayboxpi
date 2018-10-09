@@ -1,0 +1,14 @@
+AuthType Basic
+AuthName "Restricted Access"
+AuthUserFile /home/pi/.htpass
+<RequireAny>
+    Require ip 192.168.1.148
+    Require ip 192.168.1.169
+    Require ip 192.168.1.185
+    Require ip 192.168.1.206
+    Require ip 192.168.1.200
+    Require valid-user
+</RequireAny>
+
+# No need for page extensions
+Options +MultiViews

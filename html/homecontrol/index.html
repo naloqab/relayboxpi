@@ -1,0 +1,169 @@
+<html>
+	<head>
+		<title>Home Control</title>
+
+		<link rel="icon" href="../images/background2.jpg">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+		
+		<div id='main-container'>
+            <div class="section-container">
+                <div class="section-item section-title">
+                    <t>Living Room</t>
+                </div>
+
+                <div class="section-item">
+                    <div class="section-item-content">
+                        <p>Front</p>
+                    </div>
+                    <div class="section-item-content">
+                        <label class="switch">
+                        <input type="checkbox" class='Relay' value='1' onClick="RelayStatusChange(this)">
+                        <div class="slider round"></div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="section-item">
+                    <div class="section-item-content">
+                        <p>Back</p>
+                    </div>
+                    <div class="section-item-content">
+                        <label class="switch">
+                        <input type="checkbox" class='Relay' value='2' onClick="RelayStatusChange(this)">
+                        <div class="slider round"></div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="section-item">
+                    <div class="section-item-content">
+                        <p>All</p>
+                    </div>
+                    <div class="section-item-content">
+                        <label class="switch">
+                        <input type="checkbox" id='LivingRoom' onClick="AllLivingRoom()">
+                        <div class="slider round"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+
+            <div class="section-container">
+                <div class="section-item section-title">
+                    <t>Bedroom</t>
+                </div>
+
+                <div class="section-item">
+                    <div class="section-item-content">
+                        <p>Lamps</p>
+                    </div>
+                    <div class="section-item-content">
+                        <label class="switch">
+                        <input type="checkbox" class='Relay' value='3' onClick="RelayStatusChange(this)">
+                        <div class="slider round"></div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="section-item">
+                    <div class="section-item-content">
+                        <p>Lights</p>
+                    </div>
+                    <div class="section-item-content">
+                        <label class="switch">
+                        <input type="checkbox" class='Relay' value='4' onClick="RelayStatusChange(this)">
+                        <div class="slider round"></div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="section-item">
+                    <div class="section-item-content">
+                        <p>All</p>
+                    </div>
+                    <div class="section-item-content">
+                        <label class="switch">
+                        <input type="checkbox" id='Bedroom' onClick="AllBedroom()">
+                        <div class="slider round"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+
+            <div class="section-container">
+                <div class="section-item section-title">
+                    <t>All Rooms</t>
+                </div>
+
+                <div class="section-item">
+                    <div class="section-item-content">
+                        <p>All</p>
+                    </div>
+                    <div class="section-item-content">
+                        <label class="switch">
+                        <input type="checkbox" id='AllRelays' onClick="All()">
+                        <div class="slider round"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- <div class="section-container">
+                <div class="section-item section-title">
+                    <t>Entrance</t>
+                </div>
+
+                <div class="section-item">
+                    <div class="section-item-content">
+                        <p>All</p>
+                    </div>
+                    <div class="section-item-content">
+                        <label class="switch">
+                        <input type="checkbox" id='DoorLock' onClick="DoorLockStatus()">
+                        <div class="slider round"></div>
+                        </label>
+                    </div>
+                </div>
+            </div> -->
+
+        
+        
+
+            <div class="section-container">
+                <div class="section-item section-title">
+                    <t>Gaming PC</t>
+                </div>
+
+                <div class="section-item">
+                    <div class="section-item-content">
+                        <p>Power</p>
+                    </div>
+                    <div class="section-item-content">
+                        <label class="switch">
+                        <input type="checkbox" id='GamingPC' onClick="GamingPCPower()">
+                        <div class="slider round"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+		<div id='UpdateButtonsData'>
+		</div>
+	</body>
+</html>

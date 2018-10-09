@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "Restricted Access"
+AuthUserFile /home/pi/.htpass
+require valid-user
+
+# No need for page extensions
+Options +MultiViews
