@@ -13,7 +13,7 @@ s.close()
 
 PowerStatus = data
 
-logPath = 'GamingPCPowerStatus.txt'
+logPath = '/var/www/GamingPCPowerStatus.txt'
 
 if not os.path.exists(logPath):
     os.system("touch {}".format(logPath))
