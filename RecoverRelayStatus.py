@@ -1,10 +1,7 @@
 import RPi.GPIO as GPIO
 
-
 GPIO.setmode(GPIO.BCM)
-
 GPIO.setwarnings(False)
-
 
 GPIO.setup(2, GPIO.OUT)
 GPIO.setup(3, GPIO.OUT)
